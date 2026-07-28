@@ -10,64 +10,42 @@
     overflow-x: hidden;
 }
 body{
-    padding: 0 48px;
 }
 
 header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid red;
-    height: 70px;
-    position: fixed;
-    left: 48px;
-    top: 0;
-    right: 48px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: fixed;
+z-index: 99;
+top: 0;
+left: 0;
+right: 0;
+height: 70px;
+border:1px solid darkred;
+overflow-y: hidden;
 }
-header h1{
-    font-weight: 700;
-    cursor: pointer;
-}
-header h1:hover span{
-    color: #58a6ff;
-    transition: all 0.3s ease;
-}
-header nav{
-    border: 1px solid rgb(233, 40, 181);
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-    min-width: 0;
-    padding: 0 10px;
-}
-header nav ul{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid blue;
-    gap: 2rem;
-    list-style: none;
-    text-decoration: none;
 
-}
-header nav ul li a{
-    text-decoration: none;
-    color: #8b949e;
-    transition: all 0.3s ease ;
-    font-weight: 500;
-    font-size: .875em;
-}
-header nav ul li a:hover{
-    color: #58a6ff;
-}
-header nav .button-resume{
-    border: 1px solid salmon;
-    height: 24px;
-    padding: 0 12px;
-}
-.Hero{
-    background-color: #0d1117;
-    max-width: 100%;
-    padding-top: 100px;
+header .navbar{
+    visibility: hidden;
     border: 1px solid white;
+}
+header .list-active{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    visibility: visible;
+    position: fixed;
+    z-index: 98;
+    top: 70px;
+    left: 0;
+    right: 0;
+}
+header .humburger-btn::before{
+    content:"\2630";
+    font-size: 28px;
+}
+
+header .humburger-btn-active::before{
+    content:"tes";
 }
