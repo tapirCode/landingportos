@@ -23,8 +23,7 @@ top: 0;
 left:0;
 right:0;
 height: 70px;
-padding: 0 10px;
-border:1px solid darkred;
+padding: 0 24px;
 overflow-y: hidden;
 }
 header h1:hover{
@@ -93,5 +92,46 @@ header .humburger-btn::before{
 header .humburger-btn-active::before{
     content:"\2a09";
     font-size: 28px;
+    cursor: pointer;
+}
+body main{
+    padding: 0 24px;
+}
+body .Hero{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin:300px 0 0 0;
+    font-family: sans-serif;
+}
+body .Hero .paragraph1{
+    color: #56a4ff;
+    font-family: "Space Grotesk", sans-serif;
+}
+body .Hero .paragraph2{
+    color: #8b949e;
+    font-family: "Inter", sans-serif;
+}
+body .Hero .button-hero .view-project{
+padding: 12px 24px;
+background-color: #56a4ff;
+border-radius: 5px;
+border: 1px solid #56a4ff;
+color: black;
+}
+body .Hero .button-hero .view-project:hover{
+    background-color: #2e8dfb;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+body .Hero .button-hero .button-github{
+    padding: 12px 24px;
+    border: 1px solid #8b949e;
+    border-radius: 5px;
+    
+}
+body .Hero .button-hero .button-github:hover{
+    border: 1px solid white;
+    transition: all 0.4s ease;
     cursor: pointer;
 }
