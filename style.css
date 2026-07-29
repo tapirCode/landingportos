@@ -115,6 +115,10 @@ body .Hero .paragraph2{
     font-family: "Inter", sans-serif;
 }
 body .Hero .button-hero{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
     padding-top: 25px;
 }
 body .Hero .button-hero .view-project{
@@ -165,14 +169,45 @@ body main .section-about p{
     color:#8b949e;
 }
 body main .section-skills{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     font-size: 30px;
 }
 body main .section-skills .section-text-skills{
     display: flex;
     align-items: center;
-    gap: 80px;
+    gap: 30px;
 }
 body main .section-skills .section-text-skills .line-skills{
     border: 1px solid #8b949eb3;
     flex: 1;
+}
+body main .section-skills .card-skills{
+
+}
+body main .section-skills .card-skills1 ul{
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 30px;
+flex-wrap: wrap;
+border-radius: 6px;
+background-color: #161b22;
+padding: 24px;
+}
+body main .section-skills .card-skills1 ul li{
+    list-style: none;
+    background-color: #0d1117;
+    font-size: 14px;
+    padding: 6px 12px;
+    border: 1px solid #8b949e;
+    border-radius: 4px;
+    transition: all 0.4s ease;
+}
+
+body main .section-skills .card-skills1 ul li:hover{
+    color: #56a4ff;
+    border: 1px solid #2e8dfb;
+    transform: scale(1.1);
 }
