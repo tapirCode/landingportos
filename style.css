@@ -245,3 +245,29 @@ font-size: 19px;
 body main .section-education .card-education p{
     color: #8b949e;
 }
+body main .section-education .section-text-course{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+body main .section-education .section-text-course h5{
+    font-size: 30px;
+}
+body main .section-education .section-text-course .line-course{
+     border: 1px solid #8b949eb3;
+    flex: 1;
+}
+body main .section-education .card-course-online{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: #161b22;
+    border-radius: 6px;
+    padding: 24px 50px;
+}
+body main .section-education .card-course-online small{
+    font-size: 19px;
+}
+body main .section-education .card-course-online p{
+    color: #8b949eb3;
+}
