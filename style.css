@@ -9,6 +9,7 @@
     color: white;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    user-select: none;
 }
 body{
 }
@@ -258,7 +259,7 @@ body main .section-education .section-text-course .line-course{
     flex: 1;
 }
 body main .section-education .card-course-online{
-    display: flex;
+     display: flex;
     flex-direction: column;
     gap: 5px;
     background-color: #161b22;
@@ -270,4 +271,67 @@ body main .section-education .card-course-online small{
 }
 body main .section-education .card-course-online p{
     color: #8b949eb3;
+}
+body main .section-project{
+ display: flex;
+    flex-direction: column;
+    gap: 30px;   
+}
+body main .section-project .section-text-project h5{
+    font-size: 30px;
+}
+body main .section-project .section-text-project{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+body main .section-project .section-text-project .line-project{
+    border: 1px solid #8b949eb3;
+    flex: 1;
+}
+body main .section-project .card-project{
+display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: #161b22;
+    border-radius: 6px;
+    padding: 24px 50px;
+}
+body main .section-project .card-project small{
+    font-size: 19px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 60px;
+}
+footer .section-footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    border-bottom: 1px solid #8b949eb3;
+    padding-bottom: 60px;
+}
+footer .section-footer button{
+    font-size: 18px;
+    padding: 16px 32px;
+    width: 200px;
+    border: 2px solid #56a4ff;
+    color: #56a4ff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer .section-footer button:hover{
+    border: 2px solid #161b22;
+    color: black;
+    background-color: #2e8dfb;
+}
+footer .section-footer h5{
+    font-size: 30px;
 }
