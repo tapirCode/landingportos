@@ -12,6 +12,7 @@
     user-select: none;
 }
 body{
+    background-color: #0d1117;
 }
 
 header{
@@ -96,242 +97,42 @@ header .humburger-btn-active::before{
     font-size: 28px;
     cursor: pointer;
 }
-body main{
-    padding:128px 24px 96px;
-}
-body .Hero{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin:100px 0 0 0;
-    font-family: sans-serif;
-}
-body .Hero .paragraph1{
-    color: #56a4ff;
-    font-family: "Space Grotesk", sans-serif;
-}
-body .Hero .paragraph2{
-    padding-top: 20px;
-    color: #8b949e;
-    font-family: "Inter", sans-serif;
-}
-body .Hero .button-hero{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding-top: 25px;
-}
-body .Hero .button-hero .view-project{
-padding: 12px 24px;
-background-color: #56a4ff;
-border-radius: 5px;
-border: 1px solid #56a4ff;
-color: black;
-}
-body .Hero .button-hero .view-project:hover{
-    background-color: #2e8dfb;
-    cursor: pointer;
-    transition: all 0.4s ease;
-}
-body .Hero .button-hero .button-github{
-    padding: 12px 24px;
-    border: 1px solid #8b949e;
-    border-radius: 5px;
-    
-}
-body .Hero .button-hero .button-github:hover{
-    border: 1px solid white;
-    transition: all 0.4s ease;
-    cursor: pointer;
-}
-body main .Hero h2{
-    font-size: 50px;
-}
-body main .section-about{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    padding: 96px 0;
-}
-body main .section-about .section-text-about{
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
-body main .section-about .section-text-about .line-about{
-border: 1px solid #8b949eb3;
-flex: 1;
-}
-body main .section-about h4{
-    font-size: 30px;
-}
-body main .section-about p{
-    color:#8b949e;
-}
-body main .section-skills{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    font-size: 30px;
-}
-body main .section-skills .section-text-skills{
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
-body main .section-skills .section-text-skills h5{
-    font-size: 30px;
-}
-body main .section-skills .section-text-skills .line-skills{
-    border: 1px solid #8b949eb3;
-    flex: 1;
-}
-body main .section-skills .card-skills{
 
+main .hero{
+    display: flex;
+    flex-direction: column;
+    padding: 140px 16px 64px;
 }
-body main .section-skills .card-skills1 ul{
-display: flex;
-align-items: center;
-justify-content: center;
-gap: 30px;
-flex-wrap: wrap;
-border-radius: 6px;
-background-color: #161b22;
-padding: 24px;
-}
-body main .section-skills .card-skills1 ul li{
-    list-style: none;
-    background-color: #0d1117;
-    font-size: 14px;
-    padding: 6px 12px;
-    border: 1px solid #8b949e;
-    border-radius: 4px;
-    transition: all 0.4s ease;
+main .hero .button-cta{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 32px 0 0;
+    text-align: center;
+    max-width: 280px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-body main .section-skills .card-skills1 ul li:hover{
-    color: #56a4ff;
-    border: 1px solid #2e8dfb;
-    transform: scale(1.1);
+main .about{
+    background-color: #11161d !important;
+    padding: 64px 16px;
+    border:1px solid #21262d;
+    line-height: 32px;
 }
-body main .section-education{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-body main .section-education .section-text-education{
-    display: flex;
-    gap: 30px;
-    align-items: center;
-}
-body main .section-education .section-text-education h5{
-font-size: 30px;
-}
-body main .section-education .section-text-education .line-education{
-    border: 1px solid #8b949eb3;
-    flex: 1;
-}
-body main .section-education .card-education{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    background-color: #161b22;
-    border-radius: 6px;
-    padding: 24px 50px;
-}
-body main .section-education .card-education small{
-font-size: 19px;
-}
-body main .section-education .card-education p{
-    color: #8b949e;
-}
-body main .section-education .section-text-course{
-    display: flex;
-    gap: 30px;
-    align-items: center;
-}
-body main .section-education .section-text-course h5{
-    font-size: 30px;
-}
-body main .section-education .section-text-course .line-course{
-     border: 1px solid #8b949eb3;
-    flex: 1;
-}
-body main .section-education .card-course-online{
-     display: flex;
-    flex-direction: column;
-    gap: 5px;
-    background-color: #161b22;
-    border-radius: 6px;
-    padding: 24px 50px;
-}
-body main .section-education .card-course-online small{
-    font-size: 19px;
-}
-body main .section-education .card-course-online p{
-    color: #8b949eb3;
-}
-body main .section-project{
- display: flex;
-    flex-direction: column;
-    gap: 30px;   
-}
-body main .section-project .section-text-project h5{
-    font-size: 30px;
-}
-body main .section-project .section-text-project{
-    display: flex;
-    gap: 30px;
-    align-items: center;
-}
-body main .section-project .section-text-project .line-project{
-    border: 1px solid #8b949eb3;
-    flex: 1;
-}
-body main .section-project .card-project{
-display: flex;
-    flex-direction: column;
-    gap: 5px;
-    background-color: #161b22;
-    border-radius: 6px;
-    padding: 24px 50px;
-}
-body main .section-project .card-project small{
-    font-size: 19px;
-}
-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 30px;
-    padding-top: 60px;
-}
-footer .section-footer{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 30px;
-    align-items: center;
-    border-bottom: 1px solid #8b949eb3;
-    padding-bottom: 60px;
-}
-footer .section-footer button{
-    font-size: 18px;
-    padding: 16px 32px;
-    width: 200px;
-    border: 2px solid #56a4ff;
-    color: #56a4ff;
-    border-radius: 5px;
-    cursor: pointer;
+main .about p, h2{
+    background-color: inherit;
+    overflow: hidden;
 }
 
-footer .section-footer button:hover{
-    border: 2px solid #161b22;
-    color: black;
-    background-color: #2e8dfb;
+main .toolkit{
+    padding: 64px 16px;
 }
-footer .section-footer h5{
-    font-size: 30px;
+main .toolkit .card-toolkit{
+    margin: 32px 0 0;
+    background-color: #56a4ff;
+    width: 100%;
+    height: 100px;
 }
+
+
