@@ -136,3 +136,24 @@ main .toolkit .card-toolkit{
 }
 
 
+.card1{
+display: flex;
+flex-wrap: wrap;
+border: 1px solid blue;
+padding: 16px;
+gap: 15px;
+}
+
+.card1 img{
+    height: 30px;
+    width: 30px;
+    object-fit: contain;
+    margin-bottom: 24px;
+}
+.card1 h4{
+    font-family: "Space Grotesk", sans-serif;
+}
+.card1 p{
+    font-size: 9px;
+    line-height: 32px;
+}
