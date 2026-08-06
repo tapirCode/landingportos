@@ -1,5 +1,7 @@
+import { cardProject } from "./card-project.js"
 import { cardToolkit } from "./card-toolkit.js"
 const cardToolkits = document.querySelector('.card-toolkits')
+const cardProjects =document.querySelector('.card-projects')
 const navbar = document.querySelector('.navbar')
 const humburgerBtn = document.querySelector('.humburger-btn')
 
@@ -20,10 +22,22 @@ function sanitize(text){
 cardToolkit.forEach(({id, img, title, description})=>{
   cardToolkits.insertAdjacentHTML("beforeend",
     `<div class="card1">
-    <img src="${img}" width="30" height="30" alt="logo">
+    <img src="${img}" width="35" height="35" alt="logo">
     <h4>${sanitize(title)}</h4>
     <p>${sanitize(description)}</p>
     </div>
     `
     )
+    })
+
+    cardProject.forEach(({id,img,title,description})=>{
+      cardProjects.insertAdjacentHTML("beforeend",
+    `<div class="card2">
+    <div class="label"></div>
+    <img src="${img}" alt="logo">
+    <h4>${sanitize(title)}</h4>
+    <p>${sanitize(description)}</p>
+    </div>`
+
+      )
     })

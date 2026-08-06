@@ -156,7 +156,46 @@ padding: 16px;
     background-color: inherit;
 }
 .card1 p{
-    font-size: 9px;
+    font-size: 11px;
     line-height: 30px;
     background-color: inherit;
+}
+
+.project{
+    padding: 64px 16px;
+}
+.project .card-projects{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.project .card-projects .card2{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    flex: 1 1 200px;
+    box-sizing: border-box;
+    padding: 24px;
+    gap: 13px;
+    background-color: #11161d;
+    border: 1px solid #21262d;
+
+}
+.project .card-projects .card2 .label{
+    position: absolute;
+    top: 0;
+    right: 0;
+z-index: 99;
+    background-color: #56a4ff;
+    border: 1px solid #56a4ff;
+    width: 80px;
+    height: 4px;
+    color: #56a4ff;
+}
+.project .card-projects .card2 h4, p{
+    background-color: inherit;
+}
+.project .card-projects .card2 h4{
+font-family: "Space Grotesk", sans-serif;
+margin-top: 24px;
 }
