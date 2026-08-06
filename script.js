@@ -20,7 +20,7 @@ function sanitize(text){
 cardToolkit.forEach(({id, img, title, description})=>{
   cardToolkits.insertAdjacentHTML("beforeend",
     `<div class="card1">
-    <img src="${img}">
+    <img src="${img}" width="30" height="30" alt="logo">
     <h4>${sanitize(title)}</h4>
     <p>${sanitize(description)}</p>
     </div>
