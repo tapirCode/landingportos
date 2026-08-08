@@ -12,6 +12,10 @@
 }
 body{
     background-color: #0d1117;
+    overflow: hidden !important;
+}
+body .class-body-active{
+    overflow: hidden;
 }
 
 header{
@@ -97,6 +101,32 @@ header .humburger-btn-active::before{
     cursor: pointer;
 }
 
+.screen-blur{
+    backdrop-filter: blur(5px);
+    background: rgba(225, 225, 225, 0.3);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 20;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    pointer-events:auto;
+    user-select: none;
+    scroll-behavior: unset;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+
+}
+.screen-blur-active{
+    visibility: visible;
+    opacity: 1;
+}
+main{
+    position: relative;
+}
 main .hero{
     display: flex;
     flex-direction: column;

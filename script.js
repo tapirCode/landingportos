@@ -1,16 +1,29 @@
+// AREA UNTUK IMPORT FILE JS/ JS MODULE
 import { cardProject } from "./card-project.js"
 import { cardToolkit } from "./card-toolkit.js"
+// AREA DOM ATAU BUAT NGAMBIL ELEMENT HTML, ATAU BUAT VARIABEL
 const cardToolkits = document.querySelector('.card-toolkits')
 const cardProjects =document.querySelector('.card-projects')
 const navbar = document.querySelector('.navbar')
 const humburgerBtn = document.querySelector('.humburger-btn')
+const screenBlur = document.querySelector('.screen-blur')
 
+// EVENT UNTUK TRIGGER BUKA/TUTUP BUTTON HAMBURGER MENU
 humburgerBtn.addEventListener('click',()=>{
   navbar.classList.toggle('list-active')
   humburgerBtn.classList.toggle('humburger-btn-active')
+  screenBlur.classList.toggle('screen-blur-active')
+  document.body.classList.toggle('class-body-active')
 })
+
+// EVENT UNTUK NGE TRIGGER SAAT KLIK AREA WINDOW, UNTUK TUTUP NAVBAR SAAT TERBUKA/MUNCUL
 window.addEventListener("click", (e)=>{
-  console(e.target.classList(humburgerBtn))
+  if(!navbar.contains(e.target)&& !humburgerBtn.contains(e.target)){
+  navbar.classList.remove('list-active')
+  humburgerBtn.classList.remove('humburger-btn-active')
+  screenBlur.classList.remove('screen-blur-active')
+  document.body.classList.remove('class-body-active')
+  }
 })
 
 function sanitize(text){
