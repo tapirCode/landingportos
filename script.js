@@ -7,6 +7,13 @@ const cardProjects =document.querySelector('.card-projects')
 const navbar = document.querySelector('.navbar')
 const humburgerBtn = document.querySelector('.humburger-btn')
 const screenBlur = document.querySelector('.screen-blur')
+const classLinkActive = document.getElementsByTagName('li')
+
+console.log(classLinkActive)
+
+
+console.log(classLinkActive)
+
 
 // EVENT UNTUK TRIGGER BUKA/TUTUP BUTTON HAMBURGER MENU
 humburgerBtn.addEventListener('click',()=>{
@@ -25,6 +32,14 @@ window.addEventListener("click", (e)=>{
   document.body.classList.remove('class-body-active')
   }
 })
+
+for (const element of classLinkActive) {
+  element.classList.toggle('class-li')
+  element.addEventListener('click', ()=>{
+  navbar.classList.remove('list-active')
+  screenBlur.classList.remove('screen-blur-active')
+  })
+}
 
 function sanitize(text){
   const container =document.createElement('div')

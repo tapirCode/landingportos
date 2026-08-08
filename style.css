@@ -9,6 +9,7 @@
     color: white;
     overflow-x: hidden;
     user-select: none;
+    scroll-behavior: smooth;
 }
 body{
     background-color: #0d1117;
@@ -48,6 +49,7 @@ header h1 span:hover{
 header .navbar{
     visibility: hidden;
     opacity: 0;
+    transition: all 0.3s ease;
 }
 header .navbar ul{
     display: flex;
@@ -114,6 +116,7 @@ header .humburger-btn-active::before{
     right: 0;
     pointer-events:auto;
     user-select: none;
+    touch-action: none;
     scroll-behavior: unset;
     visibility: hidden;
     opacity: 0;
